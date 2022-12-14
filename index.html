@@ -18,6 +18,7 @@
   />-->
 
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!--- link rel="stylesheet" href="assets/js/bootstrap.js"> />--->
 </head>
 
 <body>
@@ -44,6 +45,11 @@
         <form class="d-flex" role="search">
           <button class="btn btn-primary" href="#Cita" type="submit" style="color:black"> <strong>RESERVÁ CITA</strong></button>
         </form>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#Asociacion"><strong>RADIÓLOGOS UNIDOS</strong> </a>
+        </li>
+
       </div>
 
 
@@ -296,6 +302,202 @@
   </section>
   
   <br>
+
+  <section id="Asociacion">
+
+    <br>
+
+    <h4>
+      <p class="text-center">
+        ASOCIACIÓN DE RADIÓLOGOS UNIDOS
+      </p>
+    </h4>
+
+    <br>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-primary mb-3">
+          
+          <div class="card-body">
+            <h4 class="card-title text-center">SOCIOS</h4>
+
+            <br>
+            
+            <h5>
+
+            
+              <p class="card-text text-center">Tienen un   <strong>descuento por curso</strong> a elección 
+                <br>
+                <br>
+              </p>
+
+              <p class="text-center">
+
+                <strong>70%</strong>
+                  <br>
+                  <br>
+             </p>
+                
+                <p class="text-secondary text-center">
+                  *presentar documentación de socio 
+                </p>
+          
+            </h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card border-success mb-3">
+          
+          <div class="card-body">
+
+            <h4 class="card-title text-center">ESTUDIANTES</h4>
+            
+            <br>
+
+            <h5>
+
+            
+            <p class="card-text text-center">Tienen un   <strong>descuento por curso</strong> a elección 
+              <br>
+              <br>
+            </p>
+            
+            <p class="text-center">
+
+            <strong>50%</strong>
+               <br>
+               <br>
+             </p>
+               <p class="text-secondary text-center">
+              *presentar documentación de estudiante 
+            </p>
+          
+          </h5>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col">
+        <div class="card border-warning mb-3">
+          
+          <div class="card-body">
+
+            <h4 class="card-title text-center">NO SOCIOS</h4>
+            
+            <br>
+
+
+            <h5>
+
+            
+              <p class="card-text text-center">Tienen un   <strong>descuento por curso</strong> a elección 
+                <br>
+                <br>
+              </p>
+            
+              <p class="text-center">
+
+                <strong>30%</strong>
+                  <br>
+                  <br>
+              </p>
+               
+              <p class="text-secondary text-center">
+                *presentar documentación de graduado 
+              </p>
+          
+          
+            </h5>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <br>
+   
+      <h2>
+        <p class="text-center">
+          ELEGÍ TU CURSO DE PERFECCIONAMIENTO DESDE $8000
+        </p>
+      </h2>
+  
+    <h5>
+      <p class="text-center">
+        PARA VER LOS CURSOS DISPONIBLES INGRESÁ EN LA PÁGINA WEB DE LA ASOCIACIÓN
+      </p>
+    </h5>
+
+    <br>
+
+    <form id="form_cursos" method="post">
+      <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        </div>
+      </div>
+  
+      <br>
+
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Correo" aria-label="email">
+        </div>
+      </div>
+  
+      <br>
+
+      <div class="row">
+        <div class="col">
+          <label for="cantidad" class="form-label">Cantidad de cursos</label>
+          <input type="number" id="cantidad" class="form-control" placeholder="cantidad">
+        </div>
+
+        <div class="col">
+          <label for="categorias" class="form-label">Categoria</label>
+          <select id="categorias" class="form-select">
+            <option value="Socios">Socios</option>
+            <option value="Estudiantes">Estudiantes</option>
+            <option value="No socios">No socios</option>
+         </select>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row" id="liveAlertPlaceHolder"> </div>
+
+
+      <div class="col p-1 d-grid gap-2">
+        <button type="reset" class="btn btn-success"   style="background-color: violet; border-color: violet ; color: black" >
+          <strong>BORRAR</strong>
+        </button>
+      </div>
+      <br>
+      <div class="col p-1 d-grid gap-2">
+        <button type="submit" id="liveAlertBtn" class="btn btn-success" style="background-color: violet ; border-color: violet ; color: black" >
+          <strong>RESUMEN</strong>
+        </button>
+      </div>
+
+
+    </form>
+
+
+  </section>
+
   <footer>
 
     <ul class="nav bg-color:pink">
@@ -326,13 +528,16 @@
   </footer>
 
 
+<script src="main.js">
 
+
+</script>
 
 
 
   <script src="assets/js/bootstrap.js">
-
   </script>
+  
 
 
   <!-- JavaScript Bundle with Popper 
